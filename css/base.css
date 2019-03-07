@@ -1,0 +1,30 @@
+.w {
+    width: 1190px; /* 京东的版心*/
+    margin: 0 auto;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+body {
+    background-color: #f6f6f6;
+}
+
+header {
+    height: 80px;
+    background-color: #020000;
+}
+
+<!--
+快速导航栏
+-->
+.shortcut {
+    height: 30px;
+    background-color: #e3e4e5;
+    border-bottom: 1px solid #ddd;
+}
