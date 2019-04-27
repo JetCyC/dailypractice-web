@@ -315,3 +315,41 @@ footer {
     width: 180px;
     text-align: center;
 }
+.copyright{
+    padding-top: 20px;
+    text-align: center;
+    color: #666;
+    font-size: 12px;
+}
+.copyright span{
+    margin:0 10px;
+}
+.copyright a{
+    color: #666;
+}
+.copyright div{
+    margin-top: 20px;
+}
+.copyright div p{
+    line-height: 22px;
+}
+
+.foot-icon a{
+    display: inline-block;
+    width: 103px;
+    height: 33px;
+    background: url(../images/ico_footer.png) no-repeat 0 -150px;
+    margin: 20px 4px 0;
+}
+.foot-icon a:nth-child(2) {
+    background-position: -103px  -150px;
+}
+.foot-icon a:nth-child(3) {
+    background-position: 0  -183px;
+}.foot-icon a:nth-child(4) {
+     background-position: -103px  -183px;
+ }.foot-icon a:nth-child(5) {
+      background-position: 0  -216px;
+  }.foot-icon a:nth-child(6) {
+       background-position: -103px  -216px;
+   }
