@@ -72,7 +72,7 @@
 
 <div id="login" class="login">
     <div id="title" class="login-title">登陆会员
-        <span> <a id="closeBtn" href="javascript:void(0);" class="close-login">关闭</a></span>
+        <a id="closeBtn" href="javascript:void(0);" >关闭</a>
     </div>
 
     <div class="login-input-content">
@@ -96,10 +96,23 @@
 <div id="bg" class="login-bg"></div>
 
 <script>
+    //显示登陆框和遮盖层
+    let login=document.getElementById('login');
+    let bg=document.getElementById('bg');
     //1,点击按钮，弹出登陆框
+    let link=document.getElementById('link');
+    link.onclick=function () {
+        login.style.display='block';
+        bg.style.display='block';
+        return false;
+    }
     //2,点击关闭按钮，隐藏登陆框和遮盖层
+    var closeBtn=document.getElementById('closeBtn');
+    closeBtn.onclick=function () {
+        login.style.display='none';
+        bg.style.display='none';
+    }
 </script>
-
 
 </body>
 </html>
