@@ -28,8 +28,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/loginWindow.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="471">
-              <caret line="74" column="59" lean-forward="true" selection-start-line="74" selection-start-column="59" selection-end-line="74" selection-end-column="59" />
+            <state relative-caret-position="595">
+              <caret line="136" column="36" selection-start-line="136" selection-start-column="36" selection-end-line="136" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -48,6 +48,7 @@
       <find>ul</find>
       <find>space</find>
       <find>copyright</find>
+      <find>closeBtn</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -63,7 +64,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
-    <option name="width" value="1440" />
+    <option name="x" value="730" />
+    <option name="width" value="710" />
     <option name="height" value="900" />
   </component>
   <component name="ProjectView">
@@ -142,18 +144,21 @@
       <workItem from="1563706735215" duration="335000" />
       <workItem from="1563719564961" duration="704000" />
       <workItem from="1563802400313" duration="4535000" />
-      <workItem from="1563888105038" duration="1458000" />
+      <workItem from="1563888105038" duration="1567000" />
+      <workItem from="1564199446116" duration="128000" />
+      <workItem from="1564282286081" duration="153000" />
+      <workItem from="1564301618739" duration="1965000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43312000" />
+    <option name="totallyTimeSpent" value="45667000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="678" y="0" width="762" height="900" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13812543" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.05263158" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -192,8 +197,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/loginWindow.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="471">
-          <caret line="74" column="59" lean-forward="true" selection-start-line="74" selection-start-column="59" selection-end-line="74" selection-end-column="59" />
+        <state relative-caret-position="595">
+          <caret line="136" column="36" selection-start-line="136" selection-start-column="36" selection-end-line="136" selection-end-column="36" />
         </state>
       </provider>
     </entry>
