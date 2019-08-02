@@ -170,7 +170,43 @@
     }, 2000);
   }
   //4,实现上一张和下一张的功能
-  
+  //下一张
+  arrRight.onclick = function () {
+    //第一张
+    if (index === count) {
+      ul.style.left = '0px';
+      index = 0;
+    }
+    //4<5
+    index++;
+    if (index < count) {
+      ol.children[index].click();
+    } else {
+      //if last one ,move to fast
+      animate(ul, -index * imgWidth);
+      for (let i = 0; i < ol.children.length; i++) {
+        let li = ol.children[i];
+        li.className = '';
+      }
+      ol.children[0].className = 'current';
+    }
+  }
+
+  //上一张
+  arrLeft.onclick = function () {
+    //if first one ,move to last
+    if (index === 0) {
+      index = count;
+      ul.style.left = -index * imgWidth + 'px';
+    }
+    index--;
+    ol.children[index].click();
+  }
+
+  let firstLi = ul.children[0];
+  let cloneLi = firstLi.cloneNode(true);
+  ul.appendChild(cloneLi);
+
   //5,自动切换图片
   let timerId = setInterval(function () {
     arrRight.click()
