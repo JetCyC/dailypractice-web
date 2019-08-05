@@ -1,0 +1,217 @@
+<!--轮播图案例-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        * {
+            padding: 0;
+            mergin: 0;
+            list-style: none;
+            border: 0;
+        }
+
+        .all {
+            width: 500px;
+            height: 200px;
+            padding: 7px;
+            border: 1px solid #000;
+            margin: 100px auto;
+            position: relative;
+        }
+
+        .screen {
+            width: 500px;
+            height: 200px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .screen li {
+            width: 500px;
+            height: 200px;
+            overflow: hidden;
+            float: left;
+        }
+
+        .screen ul {
+            position: absolute;
+            left: 0;
+            top: 0px;
+            width: 3000px;
+        }
+
+        .all ol {
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+            line-height: 20px;
+            text-align: center;
+        }
+
+        .all ol li {
+            float: left;
+            width: 20px;
+            height: 20px;
+            background: #fff;
+            border: 1px solid #ccc;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+
+        .all ol li.current {
+            background: yellow;
+        }
+
+        #arr {
+            display: none;
+            z-index: 1000;
+        }
+
+        #arr span {
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            left: 5px;
+            top: 50%;
+            margin-top: -20px;
+            background: #000;
+            cursor: pointer;
+            line-height: 40px;
+            text-align: center;
+            font-weight: bold;
+            font-family: '黑体';
+            font-size: 30px;
+            color: #fff;
+            opacity: 0.3;
+            border: 1px solid #fff;
+        }
+
+        #arr #right {
+            right: 5px;
+            left: auto;
+        }
+
+    </style>
+</head>
+<body>
+<div class="all" id="box">
+    <div class="screen">
+        <ul>
+            <li><img src="images/wf1.jpg" width="500" hright="200"/></li>
+            <li><img src="images/wf2.jpg" width="500" hright="200"/></li>
+            <li><img src="images/wf3.jpg" width="500" hright="200"/></li>
+            <li><img src="images/wf4.jpg" width="500" hright="200"/></li>
+            <li><img src="images/wf5.jpg" width="500" hright="200"/></li>
+        </ul>
+        <ol>
+        </ol>
+    </div>
+    <div id="arr"><span id="left"> < </span><span id="right"> > </span></div>
+</div>
+<script src="js/common.js"></script>
+<script src="js/animate.js"></script>
+<script>
+  let box = document.getElementById('box');
+  let screen = box.children[0];
+  let ul = screen.children[0];
+  let ol = screen.children[1];
+
+  let arr = document.getElementById('arr');
+  let arrLeft = document.getElementById('left');
+  let arrRight = document.getElementById('right');
+
+  //图片的宽度
+  let imgWidth = screen.offsetWidth;
+
+  let index = 0;
+
+  //1动态生成序列号
+  let count = ul.children.length;
+  for (let i = 0; i < count; i++) {
+    let li = document.createElement('li');
+    ol.appendChild(li);
+    setInnerText(li, i + 1);
+    //2,点击序号 动画的方式 切换图片
+    li.onclick = liClick;
+    //记录索引
+    li.setAttribute('index', i)
+  }
+
+  function liClick() {
+    //1,取消其他li高亮，让当前高亮
+    for (let i = 0; i < ol.children.length; i++) {
+      let li = ol.children[i];
+      li.className = '';
+    }
+    this.className = 'current';
+    //2,点击序号，动画的方式切换到当前点击的图片位置
+    let liIndex = parseInt(this.getAttribute('index'));
+    animate(ul, -liIndex * imgWidth);
+    //全局变量index和li中的index保持一致
+    index = liIndex;
+  }
+
+  //第一个初始化高亮
+  ol.children[0].className = 'current';
+
+  //3,鼠标放到盒子上线上箭头
+  box.onmouseenter = function () {
+    arr.style.display = 'block';
+    //清除定时器
+    clearInterval(timerId);
+  }
+
+  box.onmouseleave = function () {
+    arr.style.display = 'none';
+    //重新开启定时器
+    timerId = setInterval(function () {
+      arrRight.click();
+    }, 2000);
+  }
+  //4,实现上一张和下一张的功能
+  //下一张
+  arrRight.onclick = function () {
+    //第一张
+    if (index === count) {
+      ul.style.left = '0px';
+      index = 0;
+    }
+    //4<5
+    index++;
+    if (index < count) {
+      ol.children[index].click();
+    } else {
+      //if last one ,move to fast
+      animate(ul, -index * imgWidth);
+      for (let i = 0; i < ol.children.length; i++) {
+        let li = ol.children[i];
+        li.className = '';
+      }
+      ol.children[0].className = 'current';
+    }
+  }
+
+  //上一张
+  arrLeft.onclick = function () {
+    //if first one ,move to last
+    if (index === 0) {
+      index = count;
+      ul.style.left = -index * imgWidth + 'px';
+    }
+    index--;
+    ol.children[index].click();
+  }
+
+  let firstLi = ul.children[0];
+  let cloneLi = firstLi.cloneNode(true);
+  ul.appendChild(cloneLi);
+
+  //5,自动切换图片
+  let timerId = setInterval(function () {
+    arrRight.click()
+  }, 2000);
+</script>
+</body>
+</html>
