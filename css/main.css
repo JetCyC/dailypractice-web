@@ -1,0 +1,43 @@
+.cls {
+    width: 70%;
+    margin: 100px auto 0px auto;
+}
+
+.wrapper {
+    width: 970px;
+    margin: 0 auto;
+}
+
+.clearfix:after {
+    display: table;
+    clear: both;
+    content: ''
+}
+
+.header {
+    position: fixed;
+    z-index: 20;
+    left: 0;
+    top: 0;
+    height: 90px;
+    width: 100%;
+    background-color: #fff;
+    transition: height .3s;
+}
+
+.header .search-box {
+    float: left;
+    margin-left: 25px;
+    height: 30px;
+    margin-top: 24px;
+    transition: margin .3s;
+}
+
+.header .search-box div.search-btn {
+    float: left;
+    height: 30px;
+    width: 64px;
+
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAMAAAAolt3jAAAAM1BMVEUAAAD///////////////////////////////////////////////////////////////+3leKCAAAAEXRSTlMA/qkqH/KX4uEFmYxNSH9tY+SUvpEAAABVSURBVAjXZY1ZDoAwCEQZti5a9f6nNaUxBn0/k8cEICL1iupKi2GY2AhTA0sThkXfwTFm+IwCCRXUGUALbcCnzbs9XYY+fxcbBeoFxa/wl/3vR/bzBrf8Ab4Yi5q3AAAAAElFTkSuQmCC) center no-repeat #2786e4;
+    cursor: pointer;
+}
