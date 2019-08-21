@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #view {
+            height: 568px;
+            width: 320px;
+            background: url("./images/bg.png");
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+<div id="view"></div>
+</body>
+<script>
+  //create plane
+  let flyEle = document.createElement('div');
+  flyEle.id = 'fly_me';
+  flyEle.innerHTML = '<img src = "./images/me.png" />'
+  document.body.appendChild(flyEle);
+
+  //plane follow mouse
+  document.onmousemove = function () {
+    let flyEle = document.getElementById('fly_me');
+    let view = document.getElementById('view');
+    var flyX = e.clientX - 17;
+    var flyY = e.clientY - 12;
+    var xCheck = flyX > view.offsetLeft && flyX < view.offsetLeft + view.offsetWidth - 34;
+    var yCheck = flyY > view.offsetTop && flyY < view.offsetTop + view.offsetHeight - 24;
+    if (xCheck && yCheck) {
+      flyEle.style.top = flyY + 'px';
+      flyEle.style.left = flyX + 'px';
+      flyEle.flag = true;
+    }
+  }
+
+  //create Bullet
+  let objB = {
+    name: 'bullet',
+    num: 1,
+    arr: [],// ['id|top|left']
+    width: 6,
+    height: 14,
+    path: './images/b.png'
+  };
+  createBullet(objB);
+
+  function createBullet(objB) {
+    setInterval(function () {
+      var flyEle = document.getElementById('fly_me');
+      if (flyEle.flag) {
+        var ele = document.createElement('div');
+        ele.id = obj.name + obj.num;
+        var length = obj.arr.length;
+        if (length < 50) {
+          obj.arr[length] = ele.id + '|';
+          obj.num++;
+          ele.style.width = obj.width + "px";
+          ele.style.height = obj.height + "px";
+          ele.style.position = 'absolute';
+          ele.style.background = 'url(' + obj.path + ')';
+
+          ele.style.top = parseInt(flyEle.style.top) + 6 + 'px';
+          obj.arr[length] = obj.arr[length] + ele.style.top + '|';
+          ele.style.left = parseInt(flyEle.style.left) + 14 + 'px';
+          obj.arr[length] = obj.arr[length] + ele.style.left;
+        }
+        document.body.appendChild(ele);
+      }
+    }, 800)
+  }
+
+
+</script>
+</html>
