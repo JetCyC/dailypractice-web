@@ -256,4 +256,9 @@ body {
     transition: all 0.8s;
 }
 
+.ad:hover .ad-r {
+    /* 鼠标经过ad这个广告大盒子的时候，里面的这个叫ad-r的盒子的宽度由0变为990 */
+    width: 990px;
+}
+
 
