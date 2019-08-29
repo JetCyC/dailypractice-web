@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="61e9e570-7987-482f-ad1a-e96ce2005fa4" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/images/banner.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/l.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/r.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/no_login.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/baseSecond.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/baseSecond.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jingdongSecond.html" beforeDir="false" afterPath="$PROJECT_DIR$/jingdongSecond.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -23,8 +20,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/jingdongSecond.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="575">
-              <caret line="166" column="25" selection-start-line="166" selection-start-column="25" selection-end-line="166" selection-end-column="25" />
+            <state relative-caret-position="216">
+              <caret line="167" column="25" selection-start-line="167" selection-start-column="25" selection-end-line="167" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -32,8 +29,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/baseSecond.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="356" column="17" lean-forward="true" selection-start-line="356" selection-start-column="17" selection-end-line="356" selection-end-column="17" />
+            <state relative-caret-position="272">
+              <caret line="365" selection-start-line="365" selection-end-line="365" />
             </state>
           </provider>
         </entry>
@@ -87,9 +84,10 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds">
+    <option name="y" value="438" />
     <option name="width" value="1440" />
-    <option name="height" value="900" />
+    <option name="height" value="396" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -99,6 +97,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -111,11 +110,15 @@
               <item name="dailypractice-web" type="462c0819:PsiDirectoryNode" />
               <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="dailypractice-web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dailypractice-web" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -138,13 +141,13 @@
     <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/images" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/images" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/font" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/images" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -210,17 +213,18 @@
       <workItem from="1566739872815" duration="2281000" />
       <workItem from="1566784842746" duration="6279000" />
       <workItem from="1566803392132" duration="4687000" />
+      <workItem from="1567001277698" duration="2395000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="117185000" />
+    <option name="totallyTimeSpent" value="119580000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="0" y="438" width="1440" height="396" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17899929" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17829457" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -261,13 +265,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="552">
           <caret line="39" column="9" lean-forward="true" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/loginWindow.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
@@ -349,17 +346,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/images/super.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loginWindow.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-496">
+          <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/css/baseSecond.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="356" column="17" lean-forward="true" selection-start-line="356" selection-start-column="17" selection-end-line="356" selection-end-column="17" />
+        <state relative-caret-position="272">
+          <caret line="365" selection-start-line="365" selection-end-line="365" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jingdongSecond.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="166" column="25" selection-start-line="166" selection-start-column="25" selection-end-line="166" selection-end-column="25" />
+        <state relative-caret-position="216">
+          <caret line="167" column="25" selection-start-line="167" selection-start-column="25" selection-end-line="167" selection-end-column="25" />
         </state>
       </provider>
     </entry>
