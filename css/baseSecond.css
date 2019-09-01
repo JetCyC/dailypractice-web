@@ -357,6 +357,136 @@ body {
     height: 100%;
 }
 
+.loginImg {
+    position: absolute;
+    height: 46px;
+    width: 46px;
+    left: 6px;
+    top: 12px;
+    border-radius: 50%;
+    border: 2px solid #f10215;
+    padding: 4px;
+}
+
+.loginWelcome {
+    position: absolute;
+    top: 20px;
+    left: 76px;
+}
+
+.login {
+    position: absolute;
+    top: 40px;
+    left: 76px;
+}
+
+.loginRegister {
+    position: absolute;
+    top: 40px;
+    left: 106px;
+}
+
+.loginDiv {
+    position: relative;
+}
+
+.loginNew {
+    position: absolute;
+    left: 20px;
+    top: 80px;
+    border: 2px solid #f10215;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+.loginPlus {
+    position: absolute;
+    left: 90px;
+    top: 80px;
+    border: 2px solid #f10215;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+.news {
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    position: relative;
+    margin-top: 116px;
+}
+
+.news-h {
+    position: relative;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.news-h-1 {
+    margin-left: 10px;
+    margin-right: 10px;
+    border-bottom: 3px solid #f10215;
+}
+
+.news-h-2 {
+    margin-right: 34px;
+}
+
+.news-h-3 {
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+    float: bottom;
+}
+
+.news-h-4 {
+    width: 1px;
+    height: 12px;
+    background-color: #ccc;
+    position: absolute;
+    left: 40px;
+    top: 8px;
+}
+
+.news-f {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.expand {
+    height: 220px;
+}
+
+.expand ul {
+    width: 195px;
+}
+
+.expand li {
+    width: 47px;
+    height: 69px;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    float: left;
+}
+
+.expand li a {
+    display: block;
+    padding-top: 15px;
+    text-align: center;
+}
+
+.expand li i {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    background: url(../images/sprite_fs@1x.png) no-repeat;
+    width: 18px;
+    height: 23px;
+    background-position: -5px -88px;
+}
+
+
+
 
 
 
