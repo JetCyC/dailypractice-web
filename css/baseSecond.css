@@ -312,6 +312,10 @@ body {
     transform: translateY(-50%);
 }
 
+.arrow-l {
+    left: 0;
+}
+
 .arrow-r {
     right: 0;
 }
@@ -486,10 +490,93 @@ body {
 }
 
 footer {
-    margin-top: 50px;
+    margin-top: 40px;
     height: 500px;
     background-color: #EAEAEA;
 }
+
+.dkhs {
+    height: 100px;
+    display: flex;
+    border-bottom: 1px solid #DEDEDE;
+    align-items: center;
+}
+
+.dkhs ul {
+    margin: 0 auto;
+    display: flex;
+    height: 100px;
+    background-color: lawngreen;
+}
+
+.dkhs ul li {
+    margin-left: 30px;
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.dkhs ul li h5 {
+    background: url(../images/ico.png) no-repeat;
+    height: 43px;
+    width: 36px;
+    text-indent: -999em;
+}
+
+.dkhs li:nth-child(2) h5 {
+    background-position: 0 -43px;
+}
+
+.dkhs li:nth-child(3) h5 {
+    background-position: 0 -86px;
+}
+
+.dkhs li:nth-child(4) h5 {
+    background-position: bottom;
+}
+
+.dkhs ul li p {
+    margin-left: 10px;
+}
+
+.shopProcess {
+    height: 240px;
+    background-color: #f10215;
+    display: flex;
+}
+
+.shopProcess2 {
+    background-color: #2786e4;
+    display: flex;
+    margin: 0 auto;
+}
+
+.shopProcess2 ul {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.shopProcess2 ul li:nth-child(1) {
+    font-size: 16px;
+}
+
+.shopProcess3 {
+
+}
+
+.shopProcess3 h5 {
+    margin: 0 auto;
+}
+
+.shopProcess3 p {
+    width: 200px;
+}
+
+.shopProcess3 h5 {
+
+}
+
+
 
 
 
