@@ -506,7 +506,6 @@ footer {
     margin: 0 auto;
     display: flex;
     height: 100px;
-    background-color: lawngreen;
 }
 
 .dkhs ul li {
@@ -540,41 +539,123 @@ footer {
 }
 
 .shopProcess {
-    height: 240px;
-    background-color: #f10215;
+    height: 200px;
     display: flex;
+    border-bottom: 1px solid #ccc;
 }
 
 .shopProcess2 {
-    background-color: #2786e4;
     display: flex;
     margin: 0 auto;
 }
 
-.shopProcess2 ul {
-    margin-left: 40px;
-    margin-right: 40px;
+.shopProcess2 dl {
+    margin-top: 24px;
+    margin-left: 66px;
+    margin-right: 66px;
 }
 
-.shopProcess2 ul li:nth-child(1) {
+.shopProcess2 dt {
     font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.shopProcess2 dd {
+    margin-top: 2px;
+    margin-bottom: 2px;
 }
 
 .shopProcess3 {
-
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
 }
 
 .shopProcess3 h5 {
     margin: 0 auto;
+    margin-right: 30px;
 }
 
 .shopProcess3 p {
     width: 200px;
+    margin-top: 12px;
 }
 
-.shopProcess3 h5 {
-
+.shopProcess3 a {
+    margin: 0 auto;
+    margin-top: 8px;
+    margin-right: 10px;
 }
+
+.aboutus {
+    margin-top: 5px;
+    display: flex;
+    text-align: center;
+}
+
+.aboutus p {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.aboutus span {
+    margin: 0 10px;
+}
+
+.copyright1 {
+    display: flex;
+    margin-top: 10px;
+    flex-direction: column;
+}
+
+.copyright2 {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.copyright2 p {
+    margin: 0 auto;
+    font-size: 8px;
+}
+
+.last {
+    margin: 0 auto;
+    display: flex;
+    margin-top: 10px;
+}
+
+.last a {
+    display: inline-block;
+    width: 103px;
+    height: 33px;
+    background: url(../images/ico_footer.png) no-repeat 0 -150px;
+}
+
+.last a:nth-child(2) {
+    background-position: -103px -150px;
+}
+
+.last a:nth-child(3) {
+    background-position: 0 -183px;
+}
+
+.last a:nth-child(4) {
+    background-position: -103px -183px;
+}
+
+.last a:nth-child(5) {
+    background-position: 0 -216px;
+}
+
+.last a:nth-child(6) {
+    background-position: -103px -216px;
+}
+
+
+
 
 
 
