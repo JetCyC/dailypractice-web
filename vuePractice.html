@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    {{a}}
+
+</div>
+<script>
+  let dt = {a: 1};
+  //Object.freeze(dt);
+  let vm = new Vue({
+    el: "#app",
+    data: dt,
+    beforeCreate: function () {
+      console.log("beforeCreate")
+    },
+    created: function () {
+      console.log("created")
+    },
+    beforeMount: function () {
+      console.log("beforeMount")
+    },
+    mounted: function () {
+      console.log("mounted")
+    },
+    beforeUpdate: function () {
+      console.log("beforeUpdate")
+    },
+    update: function () {
+      console.log("update")
+    },
+
+  });
+  vm.$watch('a', function (newVal, oldVal) {
+    console.log(newVal, oldVal);
+  })
+  vm.$data.a = "111111";
+</script>
+</body>
+</html>
