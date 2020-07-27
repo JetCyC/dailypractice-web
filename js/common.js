@@ -13,7 +13,7 @@ function getFirstElementChild(element) {
     }
     return null;
 }
-
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
 // 处理浏览器兼容性
 // 获取下一个兄弟元素
  function getNextElementSibling(element) {
